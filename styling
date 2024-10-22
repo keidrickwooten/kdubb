@@ -1,108 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Crusher - Home</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css"> <!-- Linking the external CSS file -->
 </head>
+<body class="body-class">
 
-.body-class {
-  background-color: #f4f4f4; 
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+  <header class="header-class">
+    <h1 class="title-class">CSS Crusher</h1>
+    <nav class="nav-class">
+      <a href="#" class="nav-link-class active">Home</a> |
+      <a href="#" class="nav-link-class">About</a> |
+      <a href="#" class="nav-link-class">Gallery</a> |
+      <a href="#" class="nav-link-class">Contact</a>
+    </nav>
+  </header>
 
+  <section class="hero-section-class">
+    <h2 class="section-title-class">Welcome to CSS Crusher's Homepage!</h2>
+    <p class="text-class">CSS Crusher is here to save the web from bad styles! With the power to manipulate CSS at will, CSS Crusher ensures every website is visually stunning.</p>
+    <img src="https://media.istockphoto.com/id/1360219351/photo/female-superhero-in-suit-standing-on-rooftop-with-sparks-radiating-from-hands.jpg?s=1024x1024&w=is&k=20&c=zd_jNIPuRS_f5YhQb1Y8yCS39DUNI8YXLKuX61fwFPs=" alt="CSS Crusher" class="image-class">
+  </section>
 
-.header-class {
-  background-color: #333333; 
-  color: #ffffff;
-  padding: 20px;
-  text-align: center;
-}
+  <section class="origin-section-class">
+    <h2 class="section-title-class">Origins of CSS Crusher</h2>
+    <p class="text-class">In the deepest depths of the server world, where binary reigns supreme, CSS Crusher discovered the powerful language of CSS. Since then, they have been crusading against unstyled and poorly styled websites, championing aesthetic design and user-friendly interfaces.</p>
+  </section>
 
+  <section class="testimonial-section-class">
+    <h2 class="section-title-class">Testimonials</h2>
+    <blockquote class="blockquote-class">
+      <p class="text-class">"CSS Crusher saved my website from the brink of blandness! I can't thank them enough!"</p>
+      <cite class="cite-class">- Happy Client</cite>
+    </blockquote>
+    <blockquote class="blockquote-class">
+      <p class="text-class">"I never realized how much my website's design was pushing users away until CSS Crusher came along and turned things around!"</p>
+      <cite class="cite-class">- Satisfied Customer</cite>
+    </blockquote>
+  </section>
 
-.nav-class {
-  background-color: #444444;
-  color: #ffffff;
-  padding: 10px;
-  text-align: center;
-}
+  <section class="faq-section-class">
+    <h2 class="section-title-class">Frequently Asked Questions</h2>
+    <div class="faq-class">
+      <h3 class="faq-question-class">How do I contact CSS Crusher?</h3>
+      <p class="text-class">Use the contact form below to reach out!</p>
+    </div>
+    <div class="faq-class">
+      <h3 class="faq-question-class">What services does CSS Crusher provide?</h3>
+      <p class="text-class">CSS Crusher offers CSS reviews, debugging, and redesigns. They're also available for workshops and team trainings.</p>
+    </div>
+  </section>
 
-.nav-class a {
-  color: #ffffff; 
-  text-decoration: none;
-  margin: 0 10px;
-}
+  <section class="newsletter-section-class">
+    <h2 class="section-title-class">Sign Up for Our Newsletter</h2>
+    <form class="form-class">
+      <label for="newsletter-email" class="label-class">Email:</label><br>
+      <input type="email" id="newsletter-email" name="newsletter-email" class="input-class"><br>
+      <input type="submit" value="Sign Up" class="button-class">
+    </form>
+  </section>
 
-.nav-class a.active {
-  font-weight: bold; 
+  <section class="contact-section-class">
+    <h2 class="section-title-class">Contact CSS Crusher</h2>
+    <p class="text-class">Need help with your website's CSS? Contact CSS Crusher today!</p>
+    <form class="form-class">
+      <label for="name" class="label-class">Name:</label><br>
+      <input type="text" id="name" name="name" class="input-class"><br>
+      <label for="email" class="label-class">Email:</label><br>
+      <input type="email" id="email" name="email" class="input-class"><br>
+      <input type="submit" value="Submit" class="button-class">
+    </form>
+  </section>
 
-.title-class {
-  color: #ff6600; 
-}
+  <footer class="footer-class">
+    <p class="text-class">© 2023 by CSS Crusher. All rights reserved.</p>
+  </footer>
 
-.section-title-class {
-  color: #0066cc; 
-}
-
-.text-class {
-  color: #333333; 
-  line-height: 1.6;
-}
-
-.image-class {
-  border: 3px solid #ff6600; 
-  max-width: 100%; 
-  height: auto;
-}
-
-.form-class {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 5px;
-}
-
-.input-class {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #cccccc;
-  border-radius: 3px;
-}
-
-.button-class {
-  background-color: #0066cc;
-  color: #ffffff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.button-class:hover {
-  background-color: #004d99;
-}
-
-
-.footer-class {
-  background-color: #333333;
-  color: #ffffff;
-  padding: 10px;
-  text-align: center;
-}
-
-
-body {
-  font-size: 16px;
-  color: #333333;
-}
-
-
-@media (max-width: 768px) {
-  .nav-class a {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .image-class {
-    max-width: 100%;
-  }
-}
+</body>
+</html>
